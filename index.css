@@ -1,0 +1,160 @@
+html { 
+    overflow:scroll;
+}
+
+@font-face {
+  font-family: teehee;
+  src: url(GothamSSm-Medium.otf);
+}
+
+@font-face {
+  font-family: teehee_b;
+  src: url(GothamSSm-Black.otf);
+}
+
+.stickynote {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+      cursor: pointer;
+   transition: transform .2s ease-in-out;
+   z-index: 1;
+}
+
+.stickynote:hover {
+    z-index: 10;
+    transform: scale(1.05)
+}
+
+.stickynote:active{
+    transform: scale(.95);
+    background-color: red;
+}
+
+
+.oldstickynote {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+      cursor: pointer;
+   transition: transform .2s ease-in-out;
+   z-index: 1;
+}
+
+.oldstickynote:hover {
+    z-index: 10;
+    transform: scale(1.05)
+}
+
+.oldstickynote:active{
+    transform: scale(.95);
+    background-color: red;
+}
+
+.selectionfont {
+    font-family: teehee;
+    color : whitesmoke;
+    position: fixed;
+    left:calc(100vw - 29vh);
+    top:calc(100vh - 5vh);
+     width: 50vh;
+    cursor: pointer;
+    box-sizing: content-box;
+
+    font-size: 2.5vh;
+    height: 10vh;
+    
+    z-index:  120;
+}
+
+.selectionfont:hover{
+    color :beige;
+}
+
+.selectionbutton{
+    font-family: teehee;
+    color : whitesmoke;
+    
+    z-index:  120;
+    position: fixed;
+    top:calc(100vh - 5vh);
+    left:0;
+    background-color: rgba(0,0,0,.2);
+    width: 100%;
+    
+     height: 10vh;
+    font-size: 2.5vh;
+    
+}
+.pokeman{
+    z-index:  125;
+    height: 3.2%;
+    width : 25%;
+    font-size: 2.5vh;
+    left : 37%;
+    top:calc(100vh - 5vh);
+        position: fixed;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+        background-color: rgba(70,70,70,0);
+    border: 2px;
+    
+        font-family: teehee;
+    color: whitesmoke;
+    
+}
+
+.pokeman:hover{
+        color :beige;
+}
+
+@keyframes buttontween {        
+  from {
+    width : 0vh;
+  }
+  to {
+    width : 55vh;
+  }      
+}
+
+@keyframes buttontween2 {        
+  from {
+    width : 0vh;
+  }
+  to {
+    width : 49vh;
+  }      
+}
+
+
+
+.rblxbtnremake1{
+    position: absolute;
+    background-color: rgba(70,70,70,1);
+    z-index: 121;
+    border-radius: 3vh;
+    width : 0vh;
+    height : 25vh;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+    font-family: teehee;
+    color: whitesmoke;
+}
+
+.animate {
+    animation: buttontween .5s ease;
+}
+
+.animate2 {
+    animation: buttontween2 .5s ease;
+}
+
+
+
+.
